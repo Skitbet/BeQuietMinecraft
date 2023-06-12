@@ -1,4 +1,4 @@
-package com.skitbet.stfumc;
+package com.skitbet.bequite;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
