@@ -1,6 +1,6 @@
 package com.skitbet.bequite.events;
 
-import com.skitbet.bequite.BeQuiteMCMod;
+import com.skitbet.bequite.BeQuietMCMod;
 import com.skitbet.bequite.KeyBinds;
 import net.minecraft.sounds.SoundSource;
 import net.minecraftforge.api.distmarker.Dist;
@@ -11,44 +11,44 @@ import net.minecraftforge.fml.common.Mod;
 
 public class ClientEvents {
 
-    @Mod.EventBusSubscriber(modid = BeQuiteMCMod.MODID, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = BeQuietMCMod.MODID, value = Dist.CLIENT)
     public static class ClientForgeEvents {
         @SubscribeEvent
         public static void onKeyInput(InputEvent.Key event) {
             if (KeyBinds.MASTER.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.MASTER);
+                BeQuietMCMod.updateAudio(SoundSource.MASTER);
             }
             else if (KeyBinds.BLOCKS.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.BLOCKS);
+                BeQuietMCMod.updateAudio(SoundSource.BLOCKS);
             }
             else if (KeyBinds.MUSIC.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.MUSIC);
+                BeQuietMCMod.updateAudio(SoundSource.MUSIC);
             }
             else if (KeyBinds.AMBIENT.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.AMBIENT);
+                BeQuietMCMod.updateAudio(SoundSource.AMBIENT);
             }
             else if (KeyBinds.HOSTILE.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.HOSTILE);
+                BeQuietMCMod.updateAudio(SoundSource.HOSTILE);
             }
             else if (KeyBinds.NEUTRAL.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.NEUTRAL);
+                BeQuietMCMod.updateAudio(SoundSource.NEUTRAL);
             }
             else if (KeyBinds.PLAYERS.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.PLAYERS);
+                BeQuietMCMod.updateAudio(SoundSource.PLAYERS);
             }
             else if (KeyBinds.RECORDS.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.RECORDS);
+                BeQuietMCMod.updateAudio(SoundSource.RECORDS);
             }
             else if (KeyBinds.VOICE.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.VOICE);
+                BeQuietMCMod.updateAudio(SoundSource.VOICE);
             }
             else if (KeyBinds.WEATHER.isDown()) {
-                BeQuiteMCMod.updateAudio(SoundSource.WEATHER);
+                BeQuietMCMod.updateAudio(SoundSource.WEATHER);
             }
         }
     }
 
-    @Mod.EventBusSubscriber(modid = BeQuiteMCMod.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = BeQuietMCMod.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModBusEvents {
         @SubscribeEvent
         public static void onKeyRegister(RegisterKeyMappingsEvent event) {

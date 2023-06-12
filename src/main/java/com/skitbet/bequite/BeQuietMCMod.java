@@ -15,21 +15,21 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Mod(BeQuiteMCMod.MODID)
-public class BeQuiteMCMod
+@Mod(BeQuietMCMod.MODID)
+public class BeQuietMCMod
 {
 
     /**
      * i hate coding with forge and fabric too much static shit
      */
 
-    public static final String MODID = "bequite";
+    public static final String MODID = "bequiet";
 
 
     public static Map<SoundSource, Float> savedVolumes;
     public static List<SoundSource> mutedSounds;
 
-    public BeQuiteMCMod() {
+    public BeQuietMCMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
 
