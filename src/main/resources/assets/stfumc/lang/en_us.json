@@ -1,0 +1,14 @@
+{
+  "key.category.stfumc.keybinds": "Toggle Mute KeyBinds",
+
+  "key.stfumc.master": "Master",
+  "key.stfumc.blocks": "Blocks",
+  "key.stfumc.music": "Music",
+  "key.stfumc.ambient": "Ambient",
+  "key.stfumc.hostile": "Hostile Mobs",
+  "key.stfumc.neutral": "Neutral Mobs",
+  "key.stfumc.players": "Players",
+  "key.stfumc.records": "Jukebox/NoteBlocks",
+  "key.stfumc.voice": "Voices",
+  "key.stfumc.weather": "Weather"
+}
